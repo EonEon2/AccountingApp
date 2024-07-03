@@ -1,4 +1,7 @@
 package MyApp;
+
+import java.util.Scanner;
+
 /*Value of supply (공급가) : 10,000
 VAT (부가세) : 10%
 Total (소비자가격) : 11,000
@@ -8,7 +11,11 @@ Income (수익) : 공급가 - 30%
 
 public class AccountingApp_Value { //Value 사용하여 app만들기
 public static void main(String[] args) {
-	double ValueOfSupply = 10000.0;
+	Scanner sc = new Scanner(System.in);
+	//double ValueOfSupply = 10000.0;
+	
+	System.out.print("ValueOfSupply : ");
+	double ValueOfSupply = sc.nextDouble();
 	double VAT_rate = 0.1;
 	double Expense_rate = 0.3;
 	
